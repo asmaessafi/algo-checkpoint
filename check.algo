@@ -1,0 +1,18 @@
+ALGORITHM Sentence
+VAR
+    s:STRING
+    i,j,k,sum:INTEGER
+BEGIN
+    write("write a sentence:")
+    read(s)
+    sum:=0
+    FOR i FROM 0 TO s.length-1 DO
+      sum:=sum+1
+    END_FOR
+    read(sum)
+
+
+
+
+
+END
