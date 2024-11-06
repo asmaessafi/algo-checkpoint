@@ -1,18 +1,33 @@
 ALGORITHM Sentence
 VAR
-    s:STRING
+    v,w,s:STRING
     i,j,k,sum:INTEGER
 BEGIN
+    ///////// nb of characters    
     write("write a sentence:")
     read(s)
     sum:=0
     FOR i FROM 0 TO s.length-1 DO
       sum:=sum+1
     END_FOR
-    read(sum)
+    write(sum)
 
+    /////////// nb of words 
+    w:=0
+    FOR j FROM 0 TO s.length-1 DO
+      IF s[j] = " " OR s[j]= "."
+       w=w+1
+      END_IF
+    END_FOR
+    write(w) 
 
-
-
+    //////////// nb of vowels
+    v:=0
+    FOR k FROM 0 TO s.length-1 DO
+     IF s[k] in "EAOUI" :
+        v:=v+1
+    END_IF
+    END_FOR
+    write(v)
 
 END
